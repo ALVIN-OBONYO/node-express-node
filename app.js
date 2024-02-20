@@ -1,10 +1,13 @@
-const amount = 12;
+// Global  -No window
+// __dir name 
 
-if (amount < 10) {
-    console.log('small number')
+console.log(__dirname);
+setInterval(()=>{
+    console.log('I am Yazz Nba');
+}, 20)
 
-} else {
-    console.log('large number')
-}
+const name = require('./4-name')
+const sayHi = require('./5-utils')
 
-console.log("This is my first node app");
+sayHi ('Yazz')
+sayHi(name.john)
